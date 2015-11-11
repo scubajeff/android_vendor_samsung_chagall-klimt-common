@@ -150,7 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/omx/libOMX.Exynos.VP8.Decoder.so:system/lib/omx/libOMX.Exynos.VP8.Decoder.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/omx/libOMX.Exynos.VP8.Encoder.so:system/lib/omx/libOMX.Exynos.VP8.Encoder.so
 
-PRODUCT_COPY_FILES_NN += \
+PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so
 
 #MediaServer
