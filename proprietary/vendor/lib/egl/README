@@ -1,0 +1,6 @@
+This is an old libGLES_mali.so blob.
+The newest blob causes crashes on T800,
+for which so far no solution has been found.
+
+As long as the newest blob is not compatible use this old one
+on T800 instead.

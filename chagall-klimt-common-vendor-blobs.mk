@@ -19,7 +19,6 @@ PRODUCT_COPY_FILES += \
 #RIL
 #libGLES_trace.so needed as else protobuf error
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libGLES_trace.so:system/lib/libGLES_trace.so
 
 #Mobicore
@@ -123,6 +122,7 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_COPY_FILES_CUSTOM += \
 #    vendor/samsung/chagall-klimt-common/proprietary/etc/gps.xml:system/etc/gps.xml
 
+#WORKAROUND: USE OLD libGLES_mali.so !!!
 #OpenGL
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so
