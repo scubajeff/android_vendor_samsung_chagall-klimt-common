@@ -133,12 +133,12 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc
 
 #IDC - Move to device
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/chagall-klimt-common/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc
 
 #Keylayout - Move to device
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/chagall-klimt-common/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 #OMX
 PRODUCT_COPY_FILES += \
