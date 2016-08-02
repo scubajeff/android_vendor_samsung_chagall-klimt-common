@@ -152,11 +152,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/omx/libOMX.Exynos.WMV.Decoder.so:system/lib/omx/libOMX.Exynos.WMV.Decoder.so
 
-#MediaServer
-#Binary file DBT-T800XXU1BOJ1-20151023095433/system/lib/libmediaplayerservice.so matches
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so
-
 #Samsung S5P Multi Format Codec V5/V6 firmware
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/firmware/mfc_fw.bin:system/vendor/firmware/mfc_fw.bin
@@ -165,25 +160,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/firmware/setfile_6b2_eeprom.bin:system/vendor/firmware/setfile_6b2_eeprom.bin \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/firmware/setfile_imx134_eeprom.bin:system/vendor/firmware/setfile_imx134_eeprom.bin
-
-#MediaDRM
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so
-
-#Unused?
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so
-
-#Stagefright
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
-
-#Unused
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so
 
 #Sound effects
 #lib_SA_GoogleFX_ver124b.so Needed by libaudiosa.so
