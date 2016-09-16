@@ -40,31 +40,61 @@ PRODUCT_COPY_FILES_NN += \
 # hammerhead mediadrm files (MOB30M)
 
 #MediaServer
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so
 
 #MediaDRM
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so
 
 #Stagefright
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
 
 #Widedine mediadrm engine
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
 
 #Widedine drm plugin
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
 
 #Wivedine phon api
-PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagall-klimt-common/proprietary_mediadrm_hh/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so
+
+####################################################################################################
+# bullhead mediadrm files (NRD90M)
+
+#MediaServer
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/libstagefright_hdcp.so:system/lib/libstagefright_hdcp.so
+
+#MediaDRM
+PRODUCT_COPY_FILES += \
+    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/liboemcrypto.so:system/lib/liboemcrypto.so \
+    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/libdrmdecrypt.so:system/lib/libdrmdecrypt.so
+
+#Stagefright
+PRODUCT_COPY_FILES += \
+    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
+    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
+    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so
+
+#Widedine mediadrm engine
+PRODUCT_COPY_FILES += \
+    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so
+
+#Widedine drm plugin
+PRODUCT_COPY_FILES += \
+    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so
+
+#Wivedine phon api
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/chagall-klimt-common/proprietary_mediadrm_bullhead/vendor/lib/libWVphoneAPI.so:system/vendor/lib/libWVphoneAPI.so
 
 
 
