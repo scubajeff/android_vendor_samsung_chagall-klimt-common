@@ -78,6 +78,10 @@ PRODUCT_COPY_FILES += \
 
 #Camera
 PRODUCT_COPY_FILES += \
+    vendor/samsung/chagall-klimt-common/proprietary/lib/libstlport.so:system/lib/libstlport.so
+
+#Camera
+PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libvdis.so:system/lib/libvdis.so
 
 #Camera - arcsoft
