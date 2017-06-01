@@ -77,7 +77,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf
 
 #Camera
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libstlport.so:system/lib/libstlport.so
 
 #Camera
@@ -176,4 +176,3 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so
-
