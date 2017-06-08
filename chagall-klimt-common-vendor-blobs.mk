@@ -51,14 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
     vendor/samsung/chagall-klimt-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
 
-#service for TZPR provisioning version check app
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/bin/scranton_RD:system/bin/scranton_RD
-
-#Bluetooth firmware
-#PRODUCT_COPY_FILES_CUSTOM += \
-#    vendor/samsung/chagall-klimt-common/proprietary/vendor/firmware/bcm4350_V0301.0591.hcd:system/vendor/firmware/bcm4350_V0301.0591.hcd
-
 #WiFi - Config TODO: Move to device
 PRODUCT_COPY_FILES_NN += \
     vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
@@ -79,23 +71,6 @@ PRODUCT_COPY_FILES += \
 	vendor/samsung/chagall-klimt-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libvdis.so:system/lib/libvdis.so
 
-#Camera - arcsoft
-#PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_bestface.so:system/lib/libarcsoft_magicshot_bestface.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_bestphoto.so:system/lib/libarcsoft_magicshot_bestphoto.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_common.so:system/lib/libarcsoft_magicshot_common.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_drama.so:system/lib/libarcsoft_magicshot_drama.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_eraser.so:system/lib/libarcsoft_magicshot_eraser.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_picmotion.so:system/lib/libarcsoft_magicshot_picmotion.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_night_shot_ex.so:system/lib/libarcsoft_night_shot_ex.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_panorama_burstcapture.so:system/lib/libarcsoft_panorama_burstcapture.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_picaction.so:system/lib/libarcsoft_picaction.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_picmotion.so:system/lib/libarcsoft_picmotion.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_preprocessor.so:system/lib/libarcsoft_preprocessor.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_readengine.so:system/lib/libarcsoft_readengine.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_sensorndk.so:system/lib/libarcsoft_sensorndk.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_vdoinvideo.so:system/lib/libarcsoft_vdoinvideo.so
-
 #SRP Audio driver for Samsung Exynos firmware
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/firmware/srp_cga.bin:system/vendor/firmware/srp_cga.bin \
@@ -108,26 +83,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libak09911c.so:system/lib/libak09911c.so
 
-#GPS
-#PRODUCT_COPY_FILES_CUSTOM += \
-#    vendor/samsung/chagall-klimt-common/proprietary/bin/gpsd:system/bin/gpsd \
-#    vendor/samsung/chagall-klimt-common/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so
-
 #GPS - Config TODO: Move to device
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/etc/gps.conf:system/etc/gps.conf
-
-#GPS - Config TODO: Move to device
-#PRODUCT_COPY_FILES_CUSTOM += \
-#    vendor/samsung/chagall-klimt-common/proprietary/etc/gps.xml:system/etc/gps.xml
-
-#IDC - Move to device
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/chagall-klimt-common/proprietary/usr/idc/Synaptics_HID_TouchPad.idc:system/usr/idc/Synaptics_HID_TouchPad.idc
-
-#Keylayout - Move to device
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/chagall-klimt-common/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
 
 # OMX, use OSS version except for AVC Decoder
 PRODUCT_COPY_FILES += \
@@ -143,13 +101,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/firmware/setfile_imx134_eeprom.bin:system/vendor/firmware/setfile_imx134_eeprom.bin
 
 #Sound effects
-#lib_SA_GoogleFX_ver124b.so Needed by libaudiosa.so
-#lib_SoundAlive_play_ver125e.so Needed by libaudiosa_sec.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so
-#    \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/lib_SoundAlive_play_ver125e.so:system/lib/lib_SoundAlive_play_ver125e.so
