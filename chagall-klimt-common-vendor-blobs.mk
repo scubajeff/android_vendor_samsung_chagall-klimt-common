@@ -80,7 +80,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libvdis.so:system/lib/libvdis.so
 
 #Camera - arcsoft
-PRODUCT_COPY_FILES += \
+#PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_bestface.so:system/lib/libarcsoft_magicshot_bestface.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_bestphoto.so:system/lib/libarcsoft_magicshot_bestphoto.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libarcsoft_magicshot_common.so:system/lib/libarcsoft_magicshot_common.so \
@@ -147,8 +147,8 @@ PRODUCT_COPY_FILES += \
 #lib_SoundAlive_play_ver125e.so Needed by libaudiosa_sec.so
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so \
-    \
+    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so
+#    \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/lib_SA_GoogleFX_ver124b.so:system/lib/lib_SA_GoogleFX_ver124b.so \
