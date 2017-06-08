@@ -51,20 +51,19 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000a.tlbin \
     vendor/samsung/chagall-klimt-common/proprietary/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin:system/app/mcRegistry/ffffffffd0000000000000000000000e.tlbin
 
-#WiFi - Config TODO: Move to device
-PRODUCT_COPY_FILES_NN += \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
-
 #WiFi - Firmware
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
-    vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_apsta.bin:system/etc/wifi/bcmdhd_apsta.bin \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_apsta.bin_a0:system/etc/wifi/bcmdhd_apsta.bin_a0 \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_mfg.bin:system/etc/wifi/bcmdhd_mfg.bin \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_mfg.bin_a0:system/etc/wifi/bcmdhd_mfg.bin_a0 \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_sta.bin:system/etc/wifi/bcmdhd_sta.bin \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_sta.bin_a0:system/etc/wifi/bcmdhd_sta.bin_a0 \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_ibss.bin:system/etc/wifi/bcmdhd_ibss.bin \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/bcmdhd_ibss.bin_a0:system/etc/wifi/bcmdhd_ibss.bin_a0 \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/cred.conf:system/etc/wifi/cred.conf \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/nvram_mfg.txt:system/etc/wifi/nvram_mfg.txt \
+	vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/nvram_net.txt:system/etc/wifi/nvram_net.txt
 
 #Camera
 PRODUCT_COPY_FILES += \
