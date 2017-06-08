@@ -12,11 +12,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-#Common
+# OpenGL, RS - T6XX R7P0 GPU Driver
 PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
+    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so \
+	vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc
 
-#RIL
 #libGLES_trace.so needed as else protobuf error
 PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libGLES_trace.so:system/lib/libGLES_trace.so
@@ -75,11 +75,8 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/chagall-klimt-common/proprietary/etc/wifi/olsrd.conf:system/etc/wifi/olsrd.conf
 
 #Camera
-#PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/lib/libstlport.so:system/lib/libstlport.so
-
-#Camera
 PRODUCT_COPY_FILES += \
+	vendor/samsung/chagall-klimt-common/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
     vendor/samsung/chagall-klimt-common/proprietary/lib/libvdis.so:system/lib/libvdis.so
 
 #Camera - arcsoft
@@ -123,16 +120,6 @@ PRODUCT_COPY_FILES += \
 #GPS - Config TODO: Move to device
 #PRODUCT_COPY_FILES_CUSTOM += \
 #    vendor/samsung/chagall-klimt-common/proprietary/etc/gps.xml:system/etc/gps.xml
-
-#OpenGL
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/egl/libGLES_mali.so:system/vendor/lib/egl/libGLES_mali.so
-
-#RS
-#Binary file DBT-T800XXU1BOJ1-20151023095433/system/lib/libRS.so matches
-PRODUCT_COPY_FILES += \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libRSDriverArm.so:system/vendor/lib/libRSDriverArm.so \
-    vendor/samsung/chagall-klimt-common/proprietary/vendor/lib/libmalicore.bc:system/vendor/lib/libmalicore.bc
 
 #IDC - Move to device
 #PRODUCT_COPY_FILES += \
